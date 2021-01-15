@@ -142,11 +142,12 @@ jobs:
       run: |
         rm -rf openwrt/bin/targets/x86/64/packages
         echo "::set-output name=status::success"
-        Compress-Archive -Path openwrt/bin LEDE_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.tar.gz
         Compress-Archive -Path openwrt/bin/packages LEDE_packages${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
         Compress-Archive -Path openwrt/bin/targets LEDE_targets${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
-
+            
         df -hT
+        
+#       Compress-Archive -Path openwrt/bin LEDE_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.tar.gz
       
     - name: Upload files to cowtransfer
       id: cowtransfer
@@ -185,9 +186,9 @@ jobs:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: |
-          LEDE_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.tar.gz
           LEDE_packages${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
           LEDE_targets${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
+ #        LEDE_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.tar.gz
 
     - name: WeChat notification
       if: steps.Multi-thread.outputs.status == 'success' || steps.Single-thread.outputs.status == 'success' && !cancelled()
