@@ -61,6 +61,11 @@ jobs:
         
         df -hT
 
+    - name: WeChat notification
+      run: |
+       curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=开始编译 Lede
+
+
     - name: Clone source code
       working-directory: /workdir
       run: |
