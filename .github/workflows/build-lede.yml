@@ -63,7 +63,7 @@ jobs:
 
     - name: WeChat notification
       run: |
-       curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=开始编译 Lede
+       curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=开始编译Lede
 
 
     - name: Clone source code
