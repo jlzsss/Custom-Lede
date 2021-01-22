@@ -31,7 +31,7 @@ svn co https://github.com/openwrt/packages/trunk/libs/libcap package/feeds/packa
 svn co https://github.com/Lienol/openwrt/trunk/package/diy package/diy
 rm -rf package/diy/luci-app-dockerman
 rm -rf package/diy/OpenAppFilter
-git clone https://github.com/destan19/OpenAppFilter.git package/feeds/packages/OpenAppFilter
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/jlzsss/php7.git package/feeds/packages/php7
 git clone https://github.com/jlzsss/docker-ce.git package/docker-ce
 # git clone https://gitee.com/wangfuying_admin/Docker-For-OpenWRT.git package/docker
