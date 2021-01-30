@@ -19,6 +19,7 @@ git clone https://github.com/kuoruan/openwrt-kcptun.git package/kcptun
 git clone https://github.com/jlzsss/openwrt-miredo.git package/miredo
 # git clone https://github.com/jlzsss/proxychains-ng.git package/proxychains-ng
 git clone https://github.com/yichya/luci-app-xray.git package/luci-app-xray
+git clone https://github.com/yichya/openwrt-xray.git package/openwrt-xray
 git clone -b legacy https://github.com/jlzsss/luci-app-v2ray.git package/luci-app-v2ray
 git clone https://github.com/frainzy1477/luci-app-trojan.git package/luci-app-trojan
 git clone -b test https://github.com/frainzy1477/luci-app-clash.git package/luci-app-clash
