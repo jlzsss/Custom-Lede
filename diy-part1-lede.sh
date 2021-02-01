@@ -37,6 +37,7 @@ git clone https://github.com/jlzsss/php7.git package/feeds/packages/php7
 git clone https://github.com/jlzsss/docker-ce.git package/docker-ce
 # git clone https://gitee.com/wangfuying_admin/Docker-For-OpenWRT.git package/docker
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+git clone https://github.com/NateLol/luci-app-oled.git package/luci-app-oled
 # svn co https://github.com/Lienol/openwrt-packages/trunk/lang/python package/feeds/packages/python
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/docker-ce package/feeds/packages/docker-ce
 git clone https://github.com/jlzsss/dnscrypt-proxy2.git package/feeds/packages/dnscrypt-proxy2
