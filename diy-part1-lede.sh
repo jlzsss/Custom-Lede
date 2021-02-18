@@ -32,6 +32,8 @@ svn co https://github.com/openwrt/packages/trunk/libs/libcap package/feeds/packa
 svn co https://github.com/Lienol/openwrt/trunk/package/diy package/diy
 rm -rf package/diy/luci-app-dockerman
 rm -rf package/diy/OpenAppFilter
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/jlzsss/php7.git package/feeds/packages/php7
 git clone https://github.com/jlzsss/docker-ce.git package/docker-ce
