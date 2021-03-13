@@ -30,7 +30,7 @@ git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/luc
 # git clone https://github.com/jlzsss/luci-app-ssr-plus-jo-depend.git package/luci-app-ssr-plus-jo-depend
 svn co https://github.com/openwrt/packages/trunk/libs/libcap package/feeds/packages/libcap
 svn co https://github.com/Lienol/openwrt/trunk/package/diy package/diy
-svn co https://github.com/Lienol/openwrt-packages/trunk/utils/dockerd package/utils/dockerd
+svn co https://github.com/Lienol/openwrt-packages/trunk/utils/dockerd feeds/packages/utils/dockerd
 rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-theme-argon
 git clone https://github.com/kuoruan/openwrt-v2ray.git package/v2ray-core
@@ -38,9 +38,9 @@ git clone -b master --depth 1 https://github.com/kuoruan/openwrt-upx.git package
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/jlzsss/php7.git package/feeds/packages/php7
-git clone https://github.com/jlzsss/docker-ce.git package/docker-ce
+# git clone https://github.com/jlzsss/docker-ce.git package/docker-ce
 # git clone https://gitee.com/wangfuying_admin/Docker-For-OpenWRT.git package/docker
-git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+# git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 git clone https://github.com/NateLol/luci-app-oled.git package/luci-app-oled
 # svn co https://github.com/Lienol/openwrt-packages/trunk/lang/python package/feeds/packages/python
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/docker-ce package/feeds/packages/docker-ce
