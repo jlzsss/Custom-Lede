@@ -31,6 +31,7 @@ git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/luc
 svn co https://github.com/openwrt/packages/trunk/libs/libcap package/feeds/packages/libcap
 svn co https://github.com/Lienol/openwrt/trunk/package/diy package/diy
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/dockerd package/diy/dockerd
+rm -rf package/diy/luci-app-dockerman
 rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-theme-argon
 git clone https://github.com/kuoruan/openwrt-v2ray.git package/v2ray-core
